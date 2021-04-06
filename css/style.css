@@ -1,0 +1,243 @@
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Foonts */
+@font-face{
+    font-family:"Ubuntu-Bold";
+    src: url("../fonts/Ubuntu-Bold.ttf");
+}
+@font-face{
+    font-family:"Ubuntu-Regular";
+    src: url("../fonts/Ubuntu-Regular.ttf");
+}
+@font-face{
+    font-family:"Ubuntu-Medium";
+    src: url("../fonts/Ubuntu-Medium.ttf");
+}
+h1,h2,h3{
+    font-family:"Ubuntu-Bold";
+}
+p{
+    font-family:"Ubuntu-Regular";
+    letter-spacing: 0.55px;
+}
+h4,h5{
+    font-family:"Ubuntu-Medium";
+}
+/* Navbar */
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.navbar-nav li{
+    margin: 0 6px;
+}
+.navbar-nav li a{
+    font-family:"Ubuntu-Bold";
+    font-size: 0.79rem;
+    font-weight: 100;
+    color: #ffffff!important;
+}
+.navbar-nav .active{
+    background: #1272da!important;
+}
+/* carouselSlide */
+#carouselSlide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+position: relative;
+}
+.bg-black {
+    padding: 16px!important;
+    font-weight: bolder;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.coarousel_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 60%;
+
+}
+.coarousel_content .content{
+    color: #ffffff;
+    text-align: center;
+    padding: 13px;
+}
+.coarousel_content .content h1{
+    font-weight: bolder;
+    text-shadow: -4px -4px 1px #1272da, 2px 2px 3px #1272da;
+}
+.coarousel_content .content p {
+    color: #ffffff;
+}
+/* Latest News */
+#latestNews .card a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+#latestNews .card p .fa{
+    font-size: .22rem!important;
+}
+/* aboutShope */
+/* bgFixed */
+#bgFixed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+    background-color: #000000;
+    z-index: -1;
+}
+#bgFixed::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+background: url("../images/dj_8.jpg") no-repeat fixed center center/cover;
+height: 100%;
+width: 100%;
+opacity: 0.55;
+}
+/* Services */
+#services,#contact,#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 85vh;
+    z-index: -1;
+    background-color: #000000;
+}
+#services::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+background: url("../images/other/single_service_03.jpg") no-repeat fixed center center/cover;
+height: 100%;
+width: 100%;
+opacity: 0.22;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../images/other/single_service_04.jpg") no-repeat fixed center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.22;
+    }
+    #login::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("../images/other/service_02.jpg") no-repeat fixed center center/cover;
+        height: 100%;
+        width: 100%;
+        opacity: 0.22;
+        }
+#services .services-content h2, #contact .services-content h2,#login .services-content h2{
+    border-top: 2px solid #ffffff ;
+    border-bottom: 2px solid #ffffff ;
+    padding: 6px 0;
+}
+/* footer */
+#footer{
+    background-color: #222;
+}
+/* Utilities */
+.up-case{
+    text-transform: uppercase;
+}
+.text-cap{
+    text-transform: capitalize;
+}
+.border-l {
+    padding-left: 5px;
+    margin-bottom: 12px;
+    border-left: 3px solid rgb(255, 73, 73);
+}
+.border-b{
+    display: inline;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #1272da;
+}
+.bg-white{
+background-color: #f5f5f5!important;
+}
+.bg{
+    opacity: 0.88;
+}
+.login-heading{
+    text-shadow: -2px -2px 5px rgb(77, 72, 72);
+}
+/* Requister Dashboard => //////////////////////////////////////////////////////////////////////////////// */
+/* Header */
+header{
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header h3,#adminLogin .login-content h3{
+    font-weight: bold;
+    text-shadow: -2px -2px 3px #000000;
+}
+header h5{
+    font-weight: bold;
+    font-size: 1.77rem;
+}
+/* Dashboard-Wrapper = > Starts */
+#dashboar-wrapper{
+    overflow: hidden;
+}
+#dashboar-wrapper .nav .nav-link{
+    font-weight: bold;
+    margin: 2px 0;
+}
+#dashboar-wrapper .nav .nav-link:hover, .nav .active{
+    background-color: #007bff!important;
+    color: #ffffff!important;
+}
+/* Admin Area */
+#adminLogin{
+    width: auto;
+    margin: 5rem auto;
+}
+/* Utilities */
+a{
+    text-decoration: none!important;
+}
+.card-body-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #007bff;
+    border: 3px solid #ffffff!important;
+}
+.card-body-content:hover{
+    border: 3px solid #ffffff!important;
+    background-color: #007bff;
+}
+.card-body-content:hover a{
+    color: #ffffff;
+}
